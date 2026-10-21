@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>數學複習</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span data-i18n="brand">數學複習</span> <span class="brand-sub" data-i18n="brandSub">第一版</span></div>
+  <nav class="tabs" id="tabs">
+    <button data-view="map"><span data-i18n="tab.map">心智圖</span></button>
+    <button data-view="cards"><span data-i18n="tab.cards">公式卡</span></button>
+    <button data-view="quiz"><span data-i18n="tab.quiz">小測驗</span></button>
+    <button data-view="records"><span data-i18n="tab.records">常錯紀錄</span> <span class="badge" id="weak-badge"></span></button>
+    <button data-view="backup"><span data-i18n="tab.backup">備份</span></button>
+  </nav>
+  <button class="lang-btn" id="lang-btn" type="button">English</button>
+</header>
+<div class="layout">
+  <aside class="scope" id="scope" aria-label="科目與章節"></aside>
+  <main class="view" id="view"></main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
